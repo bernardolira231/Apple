@@ -1,0 +1,300 @@
+:root {
+  --negro: #212125;
+  --negro-puro: #000;
+  --blanco: #cdcdcd;
+  --blanco-puro: #ffffff;
+  --blanco-fondo: #fafafd;
+  --negro-header: #1d1d1f;
+  --blanco-msj: #f3f3f6;
+  --azul-link: #0068cc;
+  --azul-linktwo: #2281ff;
+  --gris-description: #86868b;
+  --tipografia-apple: -apple-system, BlinkMacSystemFont, sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+
+video {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center; }
+
+p a {
+  display: inline; }
+
+li {
+  list-style-type: none; }
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  hyphens: auto; }
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco); }
+
+form input,
+form textarea,
+form select {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: flex; }
+
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  line-height: 1.4em;
+  min-height: 100vh;
+  background-color: var(--blanco);
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+sup {
+  vertical-align: super;
+  font-size: 0.5em; }
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+body {
+  background-color: var(--blanco-fondo);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--negro-header);
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  height: 44px;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .header__nav {
+    padding: 0 22px 0 22px;
+    margin: 0 208px;
+    width: 1024px;
+    height: 44px; }
+  .header__apple {
+    width: 100%;
+    max-width: 16px; }
+  .header__imac {
+    width: 1.85714em;
+    max-width: 44.2px; }
+  .header__ipad {
+    width: 1.92857em;
+    max-width: 45.9px; }
+  .header__iphone {
+    width: 3.14286em;
+    max-width: 74.8px; }
+  .header__watch {
+    width: 2.85714em;
+    max-width: 68px; }
+  .header__tv {
+    width: 1.28571em;
+    max-width: 30.6px; }
+  .header__music {
+    width: 2.64286em;
+    max-width: 62.9px; }
+  .header__support {
+    width: 3.71429em;
+    max-width: 88.4px; }
+  .header__search {
+    width: 18px;
+    padding-top: 2.8em; }
+  .header__imgsearch {
+    clip-path: inset(0 0 2em 0);
+    max-height: 80%; }
+  .header__bag {
+    width: 17px; }
+  .header__ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 44px;
+    margin: 0 -10px; }
+  .header__li {
+    padding: 0 10px; }
+
+.main {
+  padding: 44px 0 0 0; }
+
+.message {
+  background-color: var(--blanco-msj);
+  width: 100%;
+  height: 100%; }
+  .message__shopmsj {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% -200px);
+    font-weight: 400;
+    font-family: "SF Pro Text", "Helvetica", "Arial";
+    height: 2.75em; }
+    .message__shopmsj a:hover {
+      text-decoration: underline; }
+  .message__shopp {
+    font-size: 0.875em;
+    font-style: normal;
+    font-weight: 412; }
+  .message__amsj {
+    color: var(--azul-link);
+    font-size: 0.875em;
+    padding-right: 0.25em;
+    font-style: normal;
+    font-weight: 412; }
+
+.iphone12 {
+  width: 100%;
+  height: 100%; }
+  .iphone12__h2 {
+    font-family: var(--tipografia-apple);
+    width: 100%;
+    text-align: center;
+    font-size: 3.45em;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 1.07143;
+    padding: 1em 0 0.15em 0;
+    display: block; }
+  .iphone12__h3 {
+    font-family: var(--tipografia-apple);
+    text-align: center;
+    font-size: 1.73em;
+    position: relative;
+    width: 100%;
+    font-style: normal;
+    font-weight: 395;
+    line-height: 1.07143;
+    display: block; }
+  .iphone12__description {
+    font-family: var(--tipografia-apple);
+    padding-top: 1em;
+    text-align: center; }
+  .iphone12__p {
+    color: var(--gris-description);
+    font-weight: 395;
+    line-height: 1.5em;
+    font-size: 1.0625em; }
+  .iphone12__sup {
+    font-size: 0.5em; }
+  .iphone12__divlearnbuy {
+    padding: 1em 35px 0 0;
+    text-align: center; }
+    .iphone12__divlearnbuy a:hover {
+      text-decoration: underline; }
+  .iphone12__alearnbuy {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    cursor: auto;
+    display: inline;
+    color: var(--azul-link);
+    font-size: 1.25em;
+    margin-left: 1.55em; }
+  .iphone12__divimg {
+    margin-top: -28px; }
+
+.iphone12pro {
+  background-color: var(--negro-puro);
+  width: 100%;
+  height: 100%;
+  padding-top: -150px; }
+  .iphone12pro__h2 {
+    color: var(--blanco-puro);
+    font-family: var(--tipografia-apple);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 3.45em;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 1.07143;
+    padding: 1em 0 0.15em 0;
+    display: block; }
+  .iphone12pro__h3 {
+    color: var(--blanco-puro);
+    font-family: var(--tipografia-apple);
+    text-align: center;
+    font-size: 1.73em;
+    position: relative;
+    width: 100%;
+    font-style: normal;
+    font-weight: 395;
+    line-height: 1.07143;
+    display: block; }
+  .iphone12pro__description {
+    font-family: var(--tipografia-apple);
+    padding-top: 1em;
+    text-align: center; }
+  .iphone12pro__p {
+    color: var(--gris-description);
+    font-weight: 395;
+    line-height: 1.5em;
+    font-size: 1.0625em; }
+  .iphone12pro__sup {
+    font-size: 0.5em; }
+  .iphone12pro__divlearnbuy {
+    padding: 1em 37px 6em 0;
+    text-align: center; }
+    .iphone12pro__divlearnbuy a:hover {
+      text-decoration: underline; }
+  .iphone12pro__alearnbuy {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    cursor: auto;
+    display: inline;
+    color: var(--azul-linktwo);
+    font-size: 1.25em;
+    margin-left: 1.55em; }
+  .iphone12pro__divimg {
+    background-color: var(--negro-puro);
+    padding-left: 13em; }
+  .iphone12pro__img {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.45);
+    width: 100%;
+    clip-path: inset(0 103px 0 0);
+    padding: 0 147.7px 0 0; }
