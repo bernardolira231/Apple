@@ -5,18 +5,10 @@ sup{
 	font-size: 0.5em;
 }
 
-html{
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
 body{
 	background-color: var(--blanco-fondo);
 	width: 100%;
 	max-width: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 
 .header{
@@ -93,8 +85,6 @@ body{
 
 	&__ul{
 		@include flex(row, nowrap, space-between, center);
-		// display: flex;
-		// align-items: center;
 		width: 1000px;
 		height: 44px;
 		margin: 0 -10px;
@@ -110,7 +100,6 @@ body{
 }
 
 .message{
-	// @include flex(row, nowrap, space-around, justify);
 	background-color:	var(--blanco-msj);
 	width: 100%;
 	height: 100%;
@@ -143,40 +132,37 @@ body{
 }
 
 .iphone12{
-
-	// background-color: red;
-	// @include flex(row, nowrap, space-between, center);
 	width: 100%;
 	height: 100%;
+	padding: 3.5em 0 0 0;
 		
 	&__h2{
 		font-family: var(--tipografia-apple);
-		// position: relative;
 		width: 100%;
+		position: 0;
 		text-align: center;
-		font-size: 3.45em;
+		font-size: 3.5em;
 		font-style: normal;
-		font-weight: 550;
+		font-weight: 600;
 		line-height: 1.07143;
-		padding: 1em 0 0.15em 0;
-		display: block;
+		letter-spacing: -0.005em;
 	}
 
 	&__h3{
+		position: 0;
 		font-family:var(--tipografia-apple);
 		text-align:center;
-		font-size: 1.73em;
-		position: relative;
+		font-size: 1.75em;
 		width: 100%;
 		font-style: normal;
-		font-weight: 395;
+		font-weight: 400;
 		line-height: 1.07143;
-		display: block;
+		margin-top: 6px;
 	}
 
 	&__description{
 		font-family: var(--tipografia-apple);
-		padding-top: 1em;
+		margin-top: 12px;
 		text-align: center;
 	}
 
@@ -187,13 +173,16 @@ body{
 		font-size: 1.0625em;
 	}
 
+	&__pup{
+		margin-top: 6.8px;
+	}
+
 	&__sup{
 		font-size: 0.5em;
 	}
 
 	&__divlearnbuy{
-		// background-color: red;
-		padding: 1em 35px 0 0;
+		margin-top: 13.65px;
 		text-align: center;
 		a:hover{
 			text-decoration: underline;
@@ -201,19 +190,26 @@ body{
 	}
 
 	&__alearnbuy{
-		// background-color: lightblue;
 		font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		width: 100%;
 		cursor: auto;
 		display: inline;
 		color: var(--azul-link);
 		font-size: 1.25em;
-		margin-left: 1.55em;
+		line-height: 1.81em;
+		letter-spacing: 0.0144em;
+	}
+
+	&__buy{
+		margin-left: 35px;
+	}
+
+	&__learn{
+		margin-left: 10px;
 	}
 
 	&__divimg{
-		// background-color: green;
-		margin-top: -28px;
+		margin-top: -35px;
 	}
 }
 
@@ -221,38 +217,39 @@ body{
 	background-color: var(--negro-puro);
 	width: 100%;
 	height: 100%;
-	padding-top: -150px;
+	padding-top: 0.01em;
 
 	&__h2{
 		color: var(--blanco-puro);
 		font-family: var(--tipografia-apple);
-		position: relative;
 		width: 100%;
+		position: 0;
 		text-align: center;
-		font-size: 3.45em;
+		font-size: 3.5em;
 		font-style: normal;
-		font-weight: 550;
+		font-weight: 600;
 		line-height: 1.07143;
-		padding: 1em 0 0.15em 0;
-		display: block;
+		letter-spacing: -0.005em;
+		padding-top: 0.9em;
 	}
 
 	&__h3{
 		color: var(--blanco-puro);
+		position: 0;
 		font-family:var(--tipografia-apple);
 		text-align:center;
-		font-size: 1.73em;
-		position: relative;
+		font-size: 1.75em;
 		width: 100%;
 		font-style: normal;
-		font-weight: 395;
+		font-weight: 400;
 		line-height: 1.07143;
-		display: block;
+		margin-top: 6px;
+		padding-bottom: 0.08em;
 	}
 
 	&__description{
 		font-family: var(--tipografia-apple);
-		padding-top: 1em;
+		margin-top: 12px;
 		text-align: center;
 	}
 
@@ -268,8 +265,9 @@ body{
 	}
 
 	&__divlearnbuy{
-		padding: 1em 37px 6em 0;
+		margin-top: 9px;
 		text-align: center;
+		margin-right: 10px;
 		a:hover{
 			text-decoration: underline;
 		}
@@ -282,19 +280,87 @@ body{
 		display: inline;
 		color: var(--azul-linktwo);
 		font-size: 1.25em;
-		margin-left: 1.55em;
+		line-height: 1.9em;
+		letter-spacing: 0.011em;
 	}
 
-	&__divimg{
-		background-color: var(--negro-puro);
-		padding-left: 13em;
+	&__buy{
+		margin-left: 35px;
+	}
+
+	&__learn{
+		margin-left: 10px;
+	}
+	
+	&__img{
+		margin-top: -11px;
+	}
+}
+
+.ipad{
+	background-color: var(--negro-puro);
+	color: var(--blanco-puro);
+	margin-top: 12px;
+	width: 100%;
+	height: 100%;
+
+		&__h2{
+		color: var(--blanco-puro);
+		font-family: var(--tipografia-apple);
+		width: 100%;
+		position: 0;
+		text-align: center;
+		font-size: 3.5em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.07143;
+		letter-spacing: -0.005em;
+		padding-top: 0.9em;
+	}
+
+	&__h3{
+		color: var(--blanco-puro);
+		position: 0;
+		font-family:var(--tipografia-apple);
+		text-align:center;
+		font-size: 1.75em;
+		width: 100%;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.07143;
+		margin-top: 6px;
+		padding-bottom: 0.08em;
+	}
+
+	&__divlearnbuy{
+		margin-top: 9px;
+		text-align: center;
+		margin-right: 10px;
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__alearnbuy{
+		font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		width: 100%;
+		cursor: auto;
+		display: inline;
+		color: var(--azul-linktwo);
+		font-size: 1.25em;
+		line-height: 1.9em;
+		letter-spacing: 0.011em;
+	}
+
+	&__buy{
+		margin-left: 35px;
+	}
+
+	&__learn{
+		margin-left: 10px;
 	}
 
 	&__img{
-		-webkit-transform: scale(1.5);
-		transform: scale(1.45);
-		width: 100%;
-		clip-path: inset(0 103px 0 0);
-		padding: 0 147.7px 0 0;
+		margin-top: -8px;
 	}
 }
