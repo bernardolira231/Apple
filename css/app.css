@@ -6,8 +6,8 @@
   --blanco-fondo: #fafafd;
   --negro-header: #1d1d1f;
   --blanco-msj: #f3f3f6;
-  --azul-link: #0068cc;
-  --azul-linktwo: #2281ff;
+  --azul-link: #06c;
+  --azul-link-dark: #2997ff;
   --gris-description: #86868b;
   --tipografia-apple: -apple-system, BlinkMacSystemFont, sans-serif; }
 
@@ -289,7 +289,7 @@ body {
     width: 100%;
     cursor: auto;
     display: inline;
-    color: var(--azul-linktwo);
+    color: var(--azul-link-dark);
     font-size: 1.25em;
     line-height: 1.9em;
     letter-spacing: 0.011em; }
@@ -341,7 +341,7 @@ body {
     width: 100%;
     cursor: auto;
     display: inline;
-    color: var(--azul-linktwo);
+    color: var(--azul-link-dark);
     font-size: 1.25em;
     line-height: 1.9em;
     letter-spacing: 0.011em; }
@@ -351,3 +351,143 @@ body {
     margin-left: 10px; }
   .ipad__img {
     margin-top: -8px; }
+
+.container {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 12px; }
+  .container a:hover {
+    text-decoration: underline;
+    cursor: auto; }
+  .container__imac {
+    background-color: #fafafa;
+    margin: 0 6px 0 12px; }
+  .container__h4imac {
+    font-family: var(--tipografia-apple);
+    width: 100%;
+    position: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.07143;
+    letter-spacing: -0.005em;
+    padding-top: 52.5px;
+    margin-left: auto;
+    margin-right: auto; }
+  .container__h5imac {
+    position: 0;
+    font-family: var(--tipografia-apple);
+    text-align: center;
+    font-size: 1.3125em;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.07143;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: auto; }
+  .container__divlearnbuy {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    color: var(--azul-link);
+    font-size: 1.0625em;
+    line-height: 1.23536;
+    letter-spacing: inherit;
+    font-weight: 400;
+    margin-left: -3px;
+    padding-top: 15px; }
+  .container__alearnbuy {
+    cursor: auto;
+    display: inline; }
+  .container__buy {
+    margin-left: 28px; }
+  .container__img {
+    margin-top: -1.5px; }
+  .container__watch {
+    background-color: var(--negro-puro);
+    margin: 0 12px 0 6px; }
+  .container__h4watch {
+    background-image: url("../assest/promo_logo_watch_series_6_lte__el1kwqt2v52e_large_2x.png");
+    height: 49px;
+    background-size: 128px 49px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px; }
+  .container__h5watch {
+    position: 0;
+    font-family: var(--tipografia-apple);
+    color: var(--blanco-puro);
+    text-align: center;
+    font-size: 1.3125em;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.07143;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto; }
+  .container__dark {
+    color: var(--azul-link-dark); }
+  .container__education {
+    background-image: url(../assest/promo_bts__bg3cb4kaoqoi_large_2x.jpg);
+    width: 1404px;
+    height: 1162px;
+    margin: 12px 6px 0 12px;
+    max-width: 97.5%;
+    background-position: center;
+    background-size: 1369px 576px; }
+  .container__h4education {
+    font-family: var(--tipografia-apple);
+    width: 88%;
+    text-align: center;
+    font-style: normal;
+    margin-top: 53px;
+    padding-left: 58px;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block; }
+  .container__h5education {
+    position: 0;
+    font-family: var(--tipografia-apple);
+    text-align: center;
+    font-size: 1.0625em;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.23536;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--azul-link); }
+  .container__fitness {
+    background-color: #fbfbfd;
+    margin: 12px 12px 0 6px; }
+  .container__h4fitness {
+    background-image: url("../assest/logo__dcojfwkzna2q_large_2x.png");
+    margin-top: 56px;
+    height: 33px;
+    background-size: 174px 33px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .container__h5fitness {
+    position: 0;
+    font-family: var(--tipografia-apple);
+    color: var(--negro-puro);
+    text-align: center;
+    font-size: 1.3125em;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.07143;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto; }

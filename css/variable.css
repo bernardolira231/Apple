@@ -1,0 +1,12 @@
+:root {
+  --negro: #212125;
+  --negro-puro: #000;
+  --blanco: #cdcdcd;
+  --blanco-puro: #ffffff;
+  --blanco-fondo: #fafafd;
+  --negro-header: #1d1d1f;
+  --blanco-msj: #f3f3f6;
+  --azul-link: #06c;
+  --azul-link-dark: #2997ff;
+  --gris-description: #86868b;
+  --tipografia-apple: -apple-system, BlinkMacSystemFont, sans-serif; }
